@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeScreen"
+    tools:ignore="HardcodedText">
+
+
+
+    <fragment
+        android:id="@+id/fragment_place"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Toolbar"
+        android:layout_marginStart="70dp"
+        android:layout_alignParentStart="true"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="@id/NavView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:animateLayoutChanges="true" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/NavView"
+        style="@style/Widget.Custom.NavigationView"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Toolbar"
+        android:layout_marginTop="0dp"
+        android:foregroundGravity="center"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp"
+        app:menu="@menu/navigation_menu"
+        android:animateLayoutChanges="true">
+    </com.google.android.material.navigation.NavigationView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar"
+        style="@style/Platform.MaterialComponents.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:title="Virtual Report"
+        app:navigationIcon="@drawable/hamburger_icon"
+        android:elevation="0dp"/>
+
+    <eightbitlab.com.blurview.BlurView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/NavView"
+        app:layout_constraintLeft_toLeftOf="@id/NavView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/blur_layout"
+        android:animateLayoutChanges="true">
+
+    </eightbitlab.com.blurview.BlurView>
+</RelativeLayout>

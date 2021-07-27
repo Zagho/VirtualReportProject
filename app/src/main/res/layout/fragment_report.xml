@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReportFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:clickable="true"
+        android:focusable="true"
+        app:elevation="6dp"
+        app:srcCompat="@drawable/add_icon"
+        app:tint="@color/primaryColor" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="370dp"
+        android:background="@color/primaryDarkColor"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="#ffffff"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/poste_icon" />
+
+    <TextView
+        android:id="@+id/textview_poste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="380dp"
+        android:background="@drawable/rounded_corner"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto"
+        android:padding="8dp"
+        android:text="Poste"
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="300dp"
+        android:background="@color/primaryDarkColor"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="#ffffff"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/sad_icon" />
+
+    <TextView
+        android:id="@+id/textview_sad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="310dp"
+        android:background="@drawable/rounded_corner"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto"
+        android:padding="8dp"
+        android:text="Soin a domicile"
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="230dp"
+        android:background="@color/primaryDarkColor"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="#ffffff"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/sac_icon" />
+
+    <TextView
+        android:id="@+id/textview_sac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/rounded_corner"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto"
+        android:padding="8dp"
+        android:text="Soin au centre"
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="160dp"
+        android:background="@color/primaryDarkColor"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="#ffffff"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/transport_icon" />
+
+    <TextView
+        android:id="@+id/textview_tm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/rounded_corner"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto"
+        android:padding="8dp"
+        android:text="Transport malade"
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="90dp"
+        android:background="@color/primaryDarkColor"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="#ffffff"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/urgence_icon" />
+
+    <TextView
+        android:id="@+id/textview_urgence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_corner"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto"
+        android:padding="8dp"
+        android:text="Urgence"
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Toolbar"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/NavView"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/dayBackBtn"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/date_picker_btn"
+                    app:cornerRadius="90dp"
+                    app:icon="@drawable/left_arrow_icon"
+                    app:iconGravity="textStart" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/date_picker_btn"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:text="Pick the date"
+                    app:cornerRadius="80dp"
+                    app:icon="@drawable/date_icon" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/dayFutureBtn"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/date_picker_btn"
+                    app:cornerRadius="90dp"
+                    app:icon="@drawable/right_arrow_icon"
+                    app:iconGravity="textStart" />
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggle_button_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:checkedButton="@+id/UrgenceBtn"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/UrgenceBtn"
+                    style="@style/ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Urgence" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/TransportBtn"
+                    style="@style/ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Tranport malade" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SacBtn"
+                    style="@style/ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soin au centre"
+                    android:fontFamily="@font/roboto" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SadBtn"
+                    style="@style/ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Soin a domicile" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/PosteBtn"
+                    style="@style/ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Poste" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/LayoutUrgTrans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:weightSum="100"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/roboto"
+                        android:text="Time"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:fontFamily="@font/roboto"
+                        android:text="Patient's info"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:fontFamily="@font/roboto"
+                        android:text="Case"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:fontFamily="@font/roboto"
+                        android:text="Destination"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="33"
+                        android:fontFamily="@font/roboto"
+                        android:text="Team"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LayoutSAC"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:weightSum="100"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/roboto"
+                        android:text="Time"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:fontFamily="@font/roboto"
+                        android:text="Patient's info"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:fontFamily="@font/roboto"
+                        android:text="Case"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="33"
+                        android:fontFamily="@font/roboto"
+                        android:text="Rescuers"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LayoutSAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:weightSum="100"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/roboto"
+                        android:text="Time"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:fontFamily="@font/roboto"
+                        android:text="Patient's info"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:fontFamily="@font/roboto"
+                        android:text="Case"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:fontFamily="@font/roboto"
+                        android:text="Location"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="33"
+                        android:fontFamily="@font/roboto"
+                        android:text="Team"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LayoutPoste"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:layout_height="30dp"
+                    android:weightSum="100"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/roboto"
+                        android:text="Time"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:fontFamily="@font/roboto"
+                        android:text="Poste info"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="38"
+                        android:fontFamily="@font/roboto"
+                        android:text="Shift duration"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:fontFamily="@font/roboto"
+                        android:text="Team"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/secondaryColor" />
+
+            <ListView
+                android:id="@+id/listViewRapport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

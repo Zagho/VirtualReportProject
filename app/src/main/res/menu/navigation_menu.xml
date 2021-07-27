@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/report_btn"
+            android:icon="@drawable/child_selector_report"
+            android:title="Report"
+            android:checked="true"/>
+        <item
+            android:id="@+id/rescuers_btn"
+            android:icon="@drawable/child_selector_rescuers"
+            android:title="Rescuers" />
+        <item
+            android:id="@+id/tasks_btn"
+            android:icon="@drawable/child_selector_tasks"
+            android:title="Tasks" />
+
+    </group>
+</menu>

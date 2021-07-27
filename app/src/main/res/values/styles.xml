@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/secondaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:statusBarColor">#ffffff</item>
+
+        <item name="drawableNavigationItemBackground" type="drawable">@drawable/menu_background_color_state</item>
+        <item name="colorNavigationItem" type="color">@color/menu_item_color_state</item>
+        <item name="colorNavigationItemSelected" type="color">@color/secondaryColor</item>
+    </style>
+
+    <style name="fab" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="colorPrimary">@color/secondaryColor</item>
+    </style>
+
+    <style name="ToggleButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="colorPrimary">@color/secondaryColor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="Widget.Custom.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="itemIconTint">?attr/colorNavigationItem</item>
+        <item name="itemTextColor">?attr/colorNavigationItem</item>
+        <item name="itemBackground">?attr/drawableNavigationItemBackground</item>
+    </style>
+
+
+</resources>

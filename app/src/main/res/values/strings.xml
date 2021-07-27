@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Virtual Report</string>
+
+    <array name="MissionType">
+        <item>Urgence</item>
+        <item>AVP</item>
+    </array>
+
+    <array name="Ambulancier">
+        <item>Bati2</item>
+        <item>Bigshow</item>
+        <item>Boumor</item>
+        <item>Douar</item>
+        <item>GPS</item>
+        <item>Matwe</item>
+        <item>Milo</item>
+        <item>Mwafa2</item>
+        <item>Rakoon</item>
+        <item>SS</item>
+        <item>Sabe3</item>
+        <item>Snorlax</item>
+        <item>Sofsafe</item>
+        <item>Tintin</item>
+        <item>Tutty</item>
+        <item>Voltaren</item>
+    </array>
+
+    <array name="CM">
+        <item>3aksa</item>
+        <item>Bati2</item>
+        <item>Bigshow</item>
+        <item>Boumor</item>
+        <item>Charlotte</item>
+        <item>Courage</item>
+        <item>Curly</item>
+        <item>Douar</item>
+        <item>Error</item>
+        <item>Flexy</item>
+        <item>Fuse</item>
+        <item>GPS</item>
+        <item>Kabse</item>
+        <item>Matwe</item>
+        <item>Milo</item>
+        <item>Mute</item>
+        <item>Mwafa2</item>
+        <item>Patro</item>
+        <item>Rakoon</item>
+        <item>SS</item>
+        <item>Sabe3</item>
+        <item>Sakr</item>
+        <item>Snorlax</item>
+        <item>Sofsafe</item>
+        <item>Tintin</item>
+        <item>Tutty</item>
+        <item>Voltaren</item>
+        <item>Zagho</item>
+        <item>Zouzou</item>
+    </array>
+
+    <array name="Secouriste1">
+        <item>3aksa</item>
+        <item>A3o</item>
+        <item>Aajib</item>
+        <item>Amene</item>
+        <item>Bati2</item>
+        <item>Bigshow</item>
+        <item>Boumor</item>
+        <item>Chah2a</item>
+        <item>Charlotte</item>
+        <item>Coma</item>
+        <item>Courage</item>
+        <item>Curly</item>
+        <item>Daye3</item>
+        <item>Didi</item>
+        <item>Douar</item>
+        <item>Error</item>
+        <item>Flexy</item>
+        <item>Fuse</item>
+        <item>GPS</item>
+        <item>Healthy</item>
+        <item>Ivone</item>
+        <item>Kabse</item>
+        <item>Leila</item>
+        <item>Mantoura</item>
+        <item>Maryoul</item>
+        <item>Matwe</item>
+        <item>Merid</item>
+        <item>Milo</item>
+        <item>Mute</item>
+        <item>Mwafa2</item>
+        <item>Ouss</item>
+        <item>Patro</item>
+        <item>Rakoon</item>
+        <item>SS</item>
+        <item>Sabe3</item>
+        <item>Sakr</item>
+        <item>Snorlax</item>
+        <item>Sofsafe</item>
+        <item>Tintin</item>
+        <item>Tutty</item>
+        <item>Voltaren</item>
+        <item>Zagho</item>
+        <item>Zeytoune</item>
+        <item>Zomato</item>
+        <item>Zouzou</item>
+    </array>
+
+    <array name="Secouriste2">
+        <item>3aksa</item>
+        <item>A3o</item>
+        <item>Aajib</item>
+        <item>Amene</item>
+        <item>Bati2</item>
+        <item>Bigshow</item>
+        <item>Boumor</item>
+        <item>Chah2a</item>
+        <item>Charlotte</item>
+        <item>Coma</item>
+        <item>Courage</item>
+        <item>Curly</item>
+        <item>Daye3</item>
+        <item>Didi</item>
+        <item>Douar</item>
+        <item>Error</item>
+        <item>Flexy</item>
+        <item>Fuse</item>
+        <item>GPS</item>
+        <item>Healthy</item>
+        <item>Ivone</item>
+        <item>Kabse</item>
+        <item>Leila</item>
+        <item>Mantoura</item>
+        <item>Maryoul</item>
+        <item>Matwe</item>
+        <item>Merid</item>
+        <item>Milo</item>
+        <item>Mute</item>
+        <item>Mwafa2</item>
+        <item>Ouss</item>
+        <item>Patro</item>
+        <item>Rakoon</item>
+        <item>SS</item>
+        <item>Sabe3</item>
+        <item>Sakr</item>
+        <item>Snorlax</item>
+        <item>Sofsafe</item>
+        <item>Tintin</item>
+        <item>Tutty</item>
+        <item>Voltaren</item>
+        <item>Zagho</item>
+        <item>Zeytoune</item>
+        <item>Zomato</item>
+        <item>Zouzou</item>
+    </array>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

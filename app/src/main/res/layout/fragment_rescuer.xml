@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RescuerFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout_1"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="One month reserviste"
+            android:textSize="18sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_reserviste"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:layout_toStartOf="@+id/recycler_rescuer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout_2"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Long reserviste"
+            android:textSize="18sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_long_reserviste"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout_3"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="All rescuers"
+            android:textSize="18sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_rescuer"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:clickable="true"
+        android:focusable="true"
+        app:elevation="6dp"
+        app:srcCompat="@drawable/add_icon"
+        app:tint="@color/primaryColor" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="160dp"
+        android:background="@color/primaryDarkColor"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="#ffffff"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/reserviste_round_icon" />
+
+    <TextView
+        android:id="@+id/textview_reserviste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/rounded_corner"
+        android:elevation="6dp"
+        android:padding="8dp"
+        android:text="Reserviste"
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="90dp"
+        android:background="@color/primaryDarkColor"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="#ffffff"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/rescuer_outline_icon" />
+
+    <TextView
+        android:id="@+id/textview_rescuer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_corner"
+        android:elevation="6dp"
+        android:padding="8dp"
+        android:text="Rescuer"
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+</RelativeLayout>

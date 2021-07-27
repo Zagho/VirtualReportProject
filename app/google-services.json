@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "112842959066",
+    "firebase_url": "https://report-e1433.firebaseio.com",
+    "project_id": "report-e1433",
+    "storage_bucket": "report-e1433.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112842959066:android:75a6d0b33e9a298a6c1de3",
+        "android_client_info": {
+          "package_name": "com.example.report"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112842959066-jp5klp6r5j54stmkhl94q3dkrp68fogd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.report",
+            "certificate_hash": "cd7e69d593197de298cefff0c4cb17b112af463d"
+          }
+        },
+        {
+          "client_id": "112842959066-vimbamn9alm9kcq9ngdn8m2u7fb31g9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpNtqfuzBVsxV4iFdW5ZQcMmMdI9UhDzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112842959066-vimbamn9alm9kcq9ngdn8m2u7fb31g9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112842959066:android:f9fdab4af0667c296c1de3",
+        "android_client_info": {
+          "package_name": "com.example.virtualreport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112842959066-vimbamn9alm9kcq9ngdn8m2u7fb31g9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpNtqfuzBVsxV4iFdW5ZQcMmMdI9UhDzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112842959066-vimbamn9alm9kcq9ngdn8m2u7fb31g9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

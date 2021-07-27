@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardElevation="6dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:background="#FFD54F"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+            <TextView
+                android:id="@+id/task_title"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Title"
+                android:textColor="@color/primaryTextColor" />
+
+            <TextView
+                android:id="@+id/tasks_text"
+                style="@style/Base.Widget.MaterialComponents.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task_title"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nothing_you_could_do"
+                android:text="Text"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tasks_text"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/lin1">
+
+                <TextView
+                    style="@style/Base.Widget.MaterialComponents.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nothing_you_could_do"
+                    android:text="By: "
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rescuer_task_name"
+                    style="@style/Base.Widget.MaterialComponents.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nothing_you_could_do"
+                    android:text="Rescuer Name"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin1"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Base.Widget.MaterialComponents.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/nothing_you_could_do"
+                android:text="On: "
+                android:textColor="@color/primaryTextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/task_date"
+                style="@android:style/Widget.Material.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/nothing_you_could_do"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Date"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/done_btn"
+            android:layout_marginTop="0dp"
+            android:background="@color/primaryColor"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/done_btn"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="left|center_vertical"
+                android:text="Done"
+                android:textColor="#F8C112"
+                android:textColorHighlight="#80F8C112"
+                android:textColorLink="#F8C112"
+                app:icon="@drawable/check_icon"
+                app:iconTint="#F8C112" />
+    </RelativeLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
